@@ -9,39 +9,34 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("file_0000000057f8720a9c08f90dd37da694.png") no-repeat center center fixed;
-    background-size: cover;
-}
-
-.overlay {
-    background: rgba(255,255,255,0.92);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.container {
-    background: white;
-    padding: 35px 25px;
-    border-radius: 16px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.2);
-    max-width: 420px;
-    width: 100%;
+    background: url("file_0000000057f8720a9c08f90dd37da694.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-color: #f5f5f5;
     text-align: center;
 }
 
+.container {
+    margin-top: 55vh;
+    background: white;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
 h1 {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 900;
     margin-bottom: 10px;
-    color: #111;
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
     color: #2563eb;
     margin-bottom: 15px;
 }
@@ -49,13 +44,45 @@ h2 {
 p {
     font-size: 16px;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .btn {
     display: inline-block;
     background: #2563eb;
     color: white;
-    padding: 14px 32px;
+    padding: 14px 28px;
     border-radius: 10px;
-    font-size:
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #1e4ed8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>ONLYPARTNERS</h1>
+    <h2>Партнёрская программа по недвижимости в Дубае 🇦🇪</h2>
+
+    <p>
+        Приводите клиентов на покупку недвижимости в ОАЭ  
+        и получайте процент с каждой успешной сделки.
+    </p>
+
+    <a class="btn" href="https://forms.gle/586hEVzBTjtEFey5A" target="_blank">
+        Стать партнёром
+    </a>
+
+    <p style="margin-top:15px; font-size:14px; color:#777;">
+        Регистрация бесплатная. После заявки мы свяжемся с вами.
+    </p>
+</div>
+
+</body>
+</html>
