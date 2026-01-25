@@ -3,40 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Спасибо за заявку</title>
-
+<title>Спасибо за регистрацию — OnlyPartners</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-.box {
-    background: white;
-    padding: 35px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-h1 {
-    font-size: 32px;
-    color: #2563eb;
-}
-p {
-    font-size: 16px;
-    color: #333;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    .box {
+        background: white;
+        padding: 40px 25px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        max-width: 420px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 26px;
+        color: #111;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 18px;
+        color: #2563eb;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 15px;
+        color: #444;
+        margin-bottom: 20px;
+    }
+    .btn {
+        display: inline-block;
+        background: #2563eb;
+        color: white;
+        padding: 12px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .btn:hover {
+        background: #1e4ed8;
+    }
 </style>
-</head>
 
+<!-- ⏳ Автопереход через 5 секунд -->
+<script>
+setTimeout(function(){
+    window.location.href = "https://vitali3337.github.io/onlypartners/";
+}, 5000);
+</script>
+
+</head>
 <body>
+
 <div class="box">
     <h1>Спасибо 🙌</h1>
-    <p>Ваша заявка принята.<br>Мы скоро свяжемся с вами.</p>
+    <h2>Ваша заявка принята</h2>
+
+    <p>
+        В ближайшее время менеджер свяжется с вами  
+        и выдаст доступ к партнёрской программе.
+    </p>
+
+    <p>
+        Через несколько секунд вы вернётесь на главную страницу.
+    </p>
+
+    <a class="btn" href="https://vitali3337.github.io/onlypartners/">
+        Вернуться сейчас
+    </a>
 </div>
+
 </body>
 </html>
