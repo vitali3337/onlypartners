@@ -3,48 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONLYPARTNERS — Недвижимость в Дубае</title>
+<title>ONLYPARTNERS — Партнёрская программа</title>
+
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #eef2f7, #d9e2ec);
         margin: 0;
-        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f4f7fb, #dfe7f2);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        text-align: center;
     }
-    .container {
+
+    .wrapper {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        max-width: 180px;
+    }
+
+    .card {
         background: white;
-        padding: 35px 25px;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 30px 25px;
         border-radius: 14px;
         box-shadow: 0 10px 35px rgba(0,0,0,0.15);
-        max-width: 420px;
-        width: 90%;
     }
-    .logo {
-        width: 200px;
-        margin-bottom: 15px;
-    }
+
     h1 {
         font-size: 26px;
-        font-weight: 800;
+        margin-bottom: 10px;
         color: #111;
-        margin-bottom: 8px;
     }
+
     h2 {
-        font-size: 17px;
-        font-weight: 600;
+        font-size: 18px;
         color: #2563eb;
         margin-bottom: 15px;
     }
+
     p {
         font-size: 15px;
         color: #333;
         margin-bottom: 20px;
+        line-height: 1.4;
     }
+
     .btn {
         display: inline-block;
         background: #2563eb;
@@ -53,38 +66,54 @@
         text-decoration: none;
         border-radius: 8px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: bold;
         transition: 0.3s;
     }
+
     .btn:hover {
         background: #1e4ed8;
+    }
+
+    .note {
+        margin-top: 15px;
+        font-size: 13px;
+        color: #666;
     }
 </style>
 </head>
 
 <body>
-<div class="container">
+<div class="wrapper">
 
-    <!-- ЛОГО -->
-    <img src="logo.png" class="logo" alt="ONLYPARTNERS">
+    <!-- Логотип -->
+    <div class="logo">
+        <img src="logo.png" alt="ONLYPARTNERS">
+    </div>
 
-    <h1>Партнёрская программа<br>по недвижимости в Дубае</h1>
-    <h2>Зарабатывайте % с каждой сделки 🇦🇪</h2>
+    <!-- Карточка -->
+    <div class="card">
 
-    <p>
-        Приводите клиентов на покупку недвижимости в ОАЭ  
-        и получайте комиссию с каждой успешной сделки.
-    </p>
+        <h1>Партнёрская программа<br>по недвижимости в Дубае 🇦🇪</h1>
 
-    <!-- ТВОЯ GOOGLE FORM -->
-    <a class="btn" href="https://forms.gle/586hEVzBTjtEFey5A" target="_blank">
-        Стать партнёром
-    </a>
+        <h2>Зарабатывайте % с каждой сделки</h2>
 
-    <p style="margin-top:15px; font-size:13px; color:#666;">
-        Регистрация бесплатная. После заявки мы свяжемся с вами.
-    </p>
+        <p>
+            Приводите клиентов на покупку недвижимости в ОАЭ  
+            и получайте комиссию с каждой успешной сделки.
+        </p>
+
+        <!-- ТВОЯ GOOGLE ФОРМА -->
+        <a class="btn" href="https://forms.gle/586hEVzBTjtEFey5A" target="_blank">
+            Стать партнёром
+        </a>
+
+        <div class="note">
+            Регистрация бесплатная. После заявки мы свяжемся с вами.
+        </div>
+
+    </div>
 
 </div>
 </body>
 </html>
+        
