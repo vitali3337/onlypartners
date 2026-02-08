@@ -3,49 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONLYPARTNERS — Партнёрская программа</title>
+<title>ONLYPARTNERS — Партнёрская программа в Дубае</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0f2027;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#0f2c33,#1e4e57);
 color:white;
 }
 
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
 .hero{
-padding:100px 20px;
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+url("banner.jpg") center/cover no-repeat;
+padding:80px 20px;
 text-align:center;
-background:url('preview.jpg') center/cover no-repeat;
-position:relative;
 }
 
-.hero::after{
-content:"";
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background:rgba(0,0,0,0.6);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-}
-
-h1{
+.hero h1{
 font-size:36px;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
-.subtitle{
-font-size:20px;
-opacity:0.9;
-margin-bottom:30px;
+.hero p{
+font-size:18px;
+margin-bottom:25px;
 }
 
 .btn{
@@ -54,7 +43,6 @@ padding:16px 30px;
 border-radius:8px;
 font-weight:bold;
 text-decoration:none;
-margin-top:20px;
 }
 
 .btn-yellow{
@@ -62,28 +50,45 @@ background:#FFC107;
 color:#000;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:50px 20px;
-}
-
 .section{
 margin-top:60px;
 }
 
 .card{
-background:rgba(255,255,255,0.08);
-padding:25px;
+background: rgba(255,255,255,0.08);
+padding:20px;
 border-radius:12px;
-margin-top:20px;
+margin-top:15px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+ul{
+padding-left:20px;
 }
 
 .footer{
-text-align:center;
 margin-top:60px;
+text-align:center;
 opacity:0.7;
 font-size:14px;
+}
+
+/* Фиксированная кнопка */
+.fixed-btn{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#FFC107;
+color:black;
+text-align:center;
+padding:18px;
+font-weight:bold;
+text-decoration:none;
+font-size:18px;
 }
 
 </style>
@@ -91,35 +96,26 @@ font-size:14px;
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
-<div class="hero-content">
 <h1>ONLYPARTNERS</h1>
-<div class="subtitle">
-Зарабатывайте до 5% с каждой сделки в недвижимости Дубая
-</div>
-
-<a href="https://wa.me/37377772473" class="btn btn-yellow">
-СТАТЬ ПАРТНЁРОМ
-</a>
-
-</div>
+<p>Зарабатывайте до 5% с каждой сделки<br>в недвижимости Дубая</p>
+<a href="https://wa.me/37377772473" class="btn btn-yellow">СТАТЬ ПАРТНЁРОМ</a>
 </div>
 
 <div class="container">
 
+<!-- Как работает -->
 <div class="section">
 <h2>Как это работает?</h2>
-
-<div class="card">
-1️⃣ Вы передаёте клиента<br><br>
-2️⃣ Мы закрываем сделку<br><br>
-3️⃣ Вы получаете до 5% комиссии
-</div>
+<div class="card">1️⃣ Вы передаёте клиента</div>
+<div class="card">2️⃣ Мы закрываем сделку</div>
+<div class="card">3️⃣ Вы получаете до 5% комиссии</div>
 </div>
 
+<!-- Пример дохода -->
 <div class="section">
 <h2>Пример дохода</h2>
-
 <div class="card">
 Сделка: $300 000<br>
 Комиссия партнёра: до $15 000<br>
@@ -127,21 +123,23 @@ font-size:14px;
 </div>
 </div>
 
+<!-- Почему с нами -->
 <div class="section">
 <h2>Почему работать с нами?</h2>
-
 <div class="card">
-✔ Надёжные застройщики<br>
+✔ Работа напрямую с застройщиками Дубая<br>
 ✔ Юридическое сопровождение<br>
 ✔ Полное ведение клиента<br>
 ✔ Прозрачные выплаты
 </div>
 </div>
 
-<div class="section" style="text-align:center;">
-<a href="https://wa.me/37377772473" class="btn btn-yellow">
-НАПИСАТЬ В WHATSAPP
-</a>
+<!-- Срочность -->
+<div class="section">
+<h2>Сейчас подключаем ограниченное количество партнёров</h2>
+<div class="card">
+Оставьте заявку сегодня и получите персональное сопровождение.
+</div>
 </div>
 
 <div class="footer">
@@ -149,6 +147,11 @@ font-size:14px;
 </div>
 
 </div>
+
+<!-- Фиксированная кнопка -->
+<a href="https://wa.me/37377772473" class="fixed-btn">
+НАПИСАТЬ В WHATSAPP
+</a>
 
 </body>
 </html>
