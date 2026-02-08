@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Инвестиции в недвижимость ОАЭ</title>
 
-<meta name="description" content="Инвестиции в недвижимость ОАЭ. Доходность 8–12% годовых. Партнёрская программа.">
-
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X07TY5BT71"></script>
 <script>
@@ -17,95 +15,103 @@ gtag('config', 'G-X07TY5BT71');
 </script>
 
 <style>
-body {
-    margin: 0;
+body{
+    margin:0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#0f172a,#1e293b);
-    color: white;
+    background: linear-gradient(135deg,#0f1c2e,#162a45);
+    color:white;
 }
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
 }
-
-h1, h2 {
-    color: #facc15;
+h1{
+    font-size:32px;
 }
-
-.section {
-    margin-bottom: 40px;
+.section{
+    margin-top:40px;
 }
-
-.box {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:10px;
+    margin-top:15px;
 }
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #facc15;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-top: 15px;
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:20px;
 }
-
-.footer {
-    text-align: center;
-    margin-top: 60px;
-    opacity: 0.6;
-    font-size: 14px;
+.btn-yellow{
+    background:#FFC107;
+    color:#000;
+}
+.btn-green{
+    background:#25D366;
+    color:#fff;
+}
+.footer{
+    margin-top:60px;
+    text-align:center;
+    opacity:0.6;
+    font-size:14px;
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
 
 <h1>Инвестиции в недвижимость ОАЭ</h1>
-<p>Профессиональный подбор объектов в Дубае с доходностью 8–12% годовых.</p>
+<p>Профессиональный подбор объектов в Дубае с доходностью 8–12% годовых. Полное сопровождение сделки и прозрачная модель партнерства.</p>
 
-<a href="#"
-   onclick="gtag('event','consultation_click',{event_category:'engagement'});"
-   class="btn">
+<!-- КНОПКА -->
+<a href="https://wa.me/37377772473"
+   target="_blank"
+   class="btn btn-yellow"
+   onclick="gtag('event','whatsapp_click',{
+      event_category:'contact',
+      event_label:'consultation_top'
+   });">
    Получить консультацию
 </a>
 
 <div class="section">
 <h2>Почему рынок ОАЭ?</h2>
 
-<div class="box">Рост рынка недвижимости 10–15% ежегодно</div>
-<div class="box">Отсутствие налога на доход от аренды</div>
-<div class="box">Надёжные международные застройщики</div>
-<div class="box">Удалённая покупка с юридическим сопровождением</div>
+<div class="card">Рост рынка недвижимости 10–15% ежегодно</div>
+<div class="card">Отсутствие налога на доход от аренды</div>
+<div class="card">Надежные международные застройщики</div>
+<div class="card">Удаленная покупка с юридическим сопровождением</div>
+
 </div>
 
 <div class="section">
 <h2>Пример инвестиции</h2>
 
-<div class="box">
+<div class="card">
 Квартира: $300 000<br>
 Средняя аренда: $2 500 / мес<br>
 Годовой доход: $30 000<br>
 Доходность: ~10% годовых
 </div>
+
 </div>
 
 <div class="section">
 <h2>Партнёрская программа</h2>
 
-<div class="box">
+<div class="card">
 Комиссия платформы: 2–5% от сделки<br>
 Пример: сделка $300 000 → комиссия до $15 000<br>
 Выплата после успешного закрытия
 </div>
+
 </div>
 
 <div class="section">
@@ -113,8 +119,11 @@ h1, h2 {
 
 <a href="https://wa.me/37377772473"
    target="_blank"
-   onclick="gtag('event','whatsapp_click',{event_category:'engagement'});"
-   class="btn">
+   class="btn btn-green"
+   onclick="gtag('event','whatsapp_click',{
+      event_category:'contact',
+      event_label:'whatsapp_footer'
+   });">
    Написать в WhatsApp
 </a>
 
