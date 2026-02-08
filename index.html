@@ -3,109 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONLYPARTNERS — Партнёрская программа</title>
+<title>ONLYPARTNERS — Зарабатывайте в Дубае</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background:#0f1c22;
 color:white;
-scroll-behavior:smooth;
 }
 
 .hero{
 background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
 url("dubai.jpg");
 background-size:cover;
 background-position:center;
 text-align:center;
-padding:120px 20px;
+padding:130px 20px;
 }
 
 .hero h1{
-font-size:44px;
-letter-spacing:2px;
-margin-bottom:10px;
+font-size:48px;
+letter-spacing:3px;
+color:#FFD700;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
+font-size:22px;
+margin:20px 0;
+}
+
+.highlight{
+color:#FFD700;
+font-weight:bold;
+font-size:32px;
 }
 
 .btn{
 display:inline-block;
-padding:18px 40px;
-background:linear-gradient(45deg,#FFD700,#FFC107);
+padding:20px 45px;
+background:linear-gradient(45deg,#FFD700,#FFA000);
 color:#000;
 font-weight:bold;
 text-decoration:none;
-border-radius:12px;
-font-size:18px;
-box-shadow:0 0 20px rgba(255,215,0,0.6);
+border-radius:15px;
+font-size:20px;
+box-shadow:0 0 25px rgba(255,215,0,0.6);
 transition:0.3s;
 }
 
 .btn:hover{
-transform:scale(1.07);
-box-shadow:0 0 35px rgba(255,215,0,1);
+transform:scale(1.08);
+box-shadow:0 0 40px rgba(255,215,0,1);
 }
 
 .section{
-padding:70px 20px;
-max-width:900px;
+padding:80px 20px;
+max-width:1000px;
 margin:auto;
 }
 
+h2{
+margin-bottom:30px;
+font-size:30px;
+color:#FFD700;
+}
+
 .card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
-padding:25px;
-border-radius:15px;
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
 margin-bottom:20px;
+backdrop-filter:blur(10px);
 transition:0.3s;
 }
 
 .card:hover{
-background:rgba(255,255,255,0.15);
+background:rgba(255,215,0,0.08);
 transform:translateY(-5px);
 }
 
-h2{
-margin-bottom:25px;
-font-size:28px;
-}
-
-.timer{
+.big-counter{
 text-align:center;
-font-size:22px;
+font-size:38px;
 color:#FFD700;
-margin-top:20px;
+margin-top:30px;
+font-weight:bold;
 }
 
-.big-money{
-font-size:34px;
-color:#FFD700;
-font-weight:bold;
-animation:pulse 2s infinite;
+.trust{
+text-align:center;
+margin-top:40px;
+font-size:18px;
+opacity:0.8;
 }
 
 .footer{
 text-align:center;
-padding:40px;
+padding:50px;
 opacity:0.6;
 }
 
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.08);}
-100%{transform:scale(1);}
-}
-
-/* Плавающая кнопка */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -118,11 +118,6 @@ font-weight:bold;
 text-decoration:none;
 box-shadow:0 0 20px rgba(0,0,0,0.5);
 z-index:999;
-transition:0.3s;
-}
-
-.whatsapp-float:hover{
-transform:scale(1.1);
 }
 
 </style>
@@ -132,35 +127,34 @@ transform:scale(1.1);
 
 <div class="hero">
 <h1>ONLYPARTNERS</h1>
-<p>Зарабатывайте до <span class="big-money">$15 000</span> с одной сделки</p>
+<p>Зарабатывайте до <span class="highlight">$15 000</span> с одной сделки</p>
 <a href="https://wa.me/37377772473" class="btn">СТАТЬ ПАРТНЁРОМ</a>
-<div class="timer">
-⏳ Осталось <span id="spots">3</span> партнёрских места
-</div>
 </div>
 
 <div class="section">
 <h2>Как это работает?</h2>
 <div class="card">1️⃣ Вы передаёте клиента</div>
-<div class="card">2️⃣ Мы закрываем сделку</div>
+<div class="card">2️⃣ Мы полностью закрываем сделку</div>
 <div class="card">3️⃣ Вы получаете до 5% комиссии</div>
 </div>
 
 <div class="section">
 <h2>Пример дохода</h2>
 <div class="card">
-Сделка: $300 000<br>
-Комиссия партнёра: до $15 000<br>
-Выплата после закрытия сделки
-</div>
+Сделка: $300 000<br><br>
+Комиссия партнёра: <b>$15 000</b><br><br>
+Выплата сразу после закрытия
 </div>
 
-<div class="section">
-<h2>Почему работать с нами?</h2>
-<div class="card">✔ Надёжные застройщики</div>
-<div class="card">✔ Юридическое сопровождение</div>
-<div class="card">✔ Полное ведение клиента</div>
-<div class="card">✔ Прозрачные выплаты</div>
+<div class="big-counter">
+💰 Уже заработали партнёры: $<span id="counter">1245000</span>
+</div>
+
+<div class="trust">
+Работаем с проверенными застройщиками Дубая.  
+Юридическое сопровождение.  
+Прозрачные выплаты.
+</div>
 </div>
 
 <div class="footer">
@@ -172,14 +166,12 @@ transform:scale(1.1);
 </a>
 
 <script>
-// Таймер мест (уменьшается при каждом обновлении)
-let spots = localStorage.getItem("spots") || 3;
-document.getElementById("spots").innerText = spots;
-
-if(spots > 1){
-spots--;
-localStorage.setItem("spots", spots);
-}
+// Анимация счётчика
+let count = 1245000;
+setInterval(()=>{
+count += Math.floor(Math.random()*50);
+document.getElementById("counter").innerText = count.toLocaleString();
+},2000);
 </script>
 
 </body>
