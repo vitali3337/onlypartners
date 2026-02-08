@@ -71,7 +71,6 @@ p {
 }
 .grid {
     display: grid;
-    reminder: 15px;
 }
 @media(min-width:768px){
     .grid {
@@ -130,8 +129,14 @@ footer {
 <div class="section" id="contact">
 <h2>Контакты</h2>
 <div class="card">
-WhatsApp: <a href="https://wa.me/37377772473" style="color:#fbbf24;">Написать</a><br>
-Email: info@onlypartners.ae
+<a href="https://wa.me/37377772473"
+onclick="gtag('event', 'whatsapp_click', {
+  'event_category': 'contact',
+  'event_label': 'whatsapp_button'
+});"
+class="btn">
+Написать в WhatsApp
+</a>
 </div>
 </div>
 
@@ -143,4 +148,3 @@ Email: info@onlypartners.ae
 
 </body>
 </html>
-
