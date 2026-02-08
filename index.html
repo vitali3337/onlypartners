@@ -18,42 +18,53 @@ gtag('config', 'G-X07TY5BT71');
 
 <style>
 body {
-    margin:0;
-    font-family:Arial, sans-serif;
-    background: linear-gradient(135deg,#0f1c2e,#1f3a63);
-    color:white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: white;
 }
+
 .container {
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
 }
-h1,h2 {color:#ffd700;}
-.card {
-    background:rgba(255,255,255,0.05);
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
+
+h1, h2 {
+    color: #facc15;
 }
+
+.section {
+    margin-bottom: 40px;
+}
+
+.box {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .btn {
-    display:inline-block;
-    background:#ffd700;
-    color:black;
-    padding:12px 20px;
-    border-radius:6px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:10px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #facc15;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 15px;
 }
-.btn:hover {opacity:0.85;}
-footer {
-    text-align:center;
-    margin-top:40px;
-    opacity:0.6;
+
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    opacity: 0.6;
+    font-size: 14px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <div class="container">
@@ -61,54 +72,59 @@ footer {
 <h1>Инвестиции в недвижимость ОАЭ</h1>
 <p>Профессиональный подбор объектов в Дубае с доходностью 8–12% годовых.</p>
 
-<a href="#" class="btn" onclick="trackConsultation()">Получить консультацию</a>
+<a href="#"
+   onclick="gtag('event','consultation_click',{event_category:'engagement'});"
+   class="btn">
+   Получить консультацию
+</a>
 
+<div class="section">
 <h2>Почему рынок ОАЭ?</h2>
 
-<div class="card">Рост рынка 10–15% ежегодно</div>
-<div class="card">Отсутствие налога на доход от аренды</div>
-<div class="card">Надёжные международные застройщики</div>
-<div class="card">Удалённая покупка с юридическим сопровождением</div>
+<div class="box">Рост рынка недвижимости 10–15% ежегодно</div>
+<div class="box">Отсутствие налога на доход от аренды</div>
+<div class="box">Надёжные международные застройщики</div>
+<div class="box">Удалённая покупка с юридическим сопровождением</div>
+</div>
 
+<div class="section">
 <h2>Пример инвестиции</h2>
 
-<div class="card">
+<div class="box">
 Квартира: $300 000<br>
 Средняя аренда: $2 500 / мес<br>
+Годовой доход: $30 000<br>
 Доходность: ~10% годовых
 </div>
+</div>
 
+<div class="section">
 <h2>Партнёрская программа</h2>
 
-<div class="card">
-Комиссия: 2–5% от сделки<br>
-Пример: $300 000 → до $15 000 комиссии
+<div class="box">
+Комиссия платформы: 2–5% от сделки<br>
+Пример: сделка $300 000 → комиссия до $15 000<br>
+Выплата после успешного закрытия
+</div>
 </div>
 
-<a href="https://wa.me/37377772473" target="_blank" class="btn" onclick="trackWhatsApp()">Написать в WhatsApp</a>
+<div class="section">
+<h2>Контакты</h2>
 
-<footer>
+<a href="https://wa.me/37377772473"
+   target="_blank"
+   onclick="gtag('event','whatsapp_click',{event_category:'engagement'});"
+   class="btn">
+   Написать в WhatsApp
+</a>
+
+</div>
+
+<div class="footer">
 © 2026 OnlyPartners | Инвестиции в недвижимость ОАЭ
-</footer>
-
 </div>
 
-<!-- Отслеживание событий -->
-<script>
-function trackConsultation() {
-    gtag('event', 'consultation_click', {
-        event_category: 'engagement',
-        event_label: 'Получить консультацию'
-    });
-}
-
-function trackWhatsApp() {
-    gtag('event', 'whatsapp_click', {
-        event_category: 'engagement',
-        event_label: 'WhatsApp'
-    });
-}
-</script>
+</div>
 
 </body>
 </html>
