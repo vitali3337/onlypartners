@@ -3,27 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>OnlyPartners — Международная недвижимость ОАЭ</title>
-<meta name="description" content="OnlyPartners — модель сотрудничества в сфере недвижимости ОАЭ для инвесторов и партнёров.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="OnlyPartners — Недвижимость ОАЭ">
-<meta property="og:description" content="Партнёрская модель работы с рынком недвижимости ОАЭ. Инвесторы и партнёры.">
-<meta property="og:image" content="https://vitali3337.github.io/onlypartners/preview.jpg">
-<meta property="og:type" content="website">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 background:#f5f7f9;
 color:#1f2937;
 line-height:1.6;
 }
-
 a{text-decoration:none;color:inherit;}
+
+.lang-switch{
+position:absolute;
+top:20px;
+right:30px;
+font-size:14px;
+}
+
+.lang-switch a{
+margin-left:10px;
+color:#111827;
+font-weight:500;
+}
 
 .hero{
 background:
@@ -31,39 +34,15 @@ linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
 url("dubai.jpg") center/cover no-repeat;
 padding:120px 20px;
 text-align:center;
+position:relative;
 }
 
-.hero h1{
-font-size:42px;
-font-weight:500;
-margin-bottom:16px;
-color:#111827;
-}
+.hero h1{font-size:42px;margin-bottom:16px;}
+.hero p{max-width:800px;margin:auto;color:#374151;}
 
-.hero p{
-font-size:18px;
-max-width:800px;
-margin:0 auto;
-color:#374151;
-}
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:80px 20px;
-}
-
-.section{
-margin-bottom:80px;
-}
-
-.section h2{
-font-size:28px;
-font-weight:500;
-margin-bottom:24px;
-color:#111827;
-}
-
+.container{max-width:1000px;margin:auto;padding:80px 20px;}
+.section{margin-bottom:80px;}
+.section h2{font-size:26px;margin-bottom:20px;}
 .card{
 background:white;
 border-radius:16px;
@@ -71,20 +50,10 @@ padding:35px;
 box-shadow:0 8px 30px rgba(0,0,0,0.05);
 margin-bottom:20px;
 }
+.list{padding-left:18px;}
+.list li{margin-bottom:10px;}
 
-.list{
-padding-left:18px;
-}
-
-.list li{
-margin-bottom:12px;
-}
-
-.cta{
-text-align:center;
-margin-top:40px;
-}
-
+.cta{text-align:center;margin-top:40px;}
 .btn{
 display:inline-block;
 padding:14px 28px;
@@ -92,13 +61,7 @@ border-radius:8px;
 background:#111827;
 color:white;
 font-weight:500;
-transition:0.3s;
 }
-
-.btn:hover{
-opacity:0.85;
-}
-
 .footer{
 border-top:1px solid #e5e7eb;
 padding:50px 20px;
@@ -109,78 +72,51 @@ background:#ffffff;
 }
 </style>
 </head>
-
 <body>
 
-<!-- HERO -->
 <div class="hero">
+<div class="lang-switch">
+RU | <a href="en.html">EN</a>
+</div>
+
 <h1>OnlyPartners</h1>
-<p>
-Международная модель сотрудничества в сфере недвижимости ОАЭ.  
-Работа с инвесторами, агентами и партнёрами в структурированном формате.
-</p>
+<p>Международная модель партнёрского взаимодействия в сфере недвижимости ОАЭ.</p>
 </div>
 
 <div class="container">
 
-<!-- О проекте -->
-<div class="section">
-<h2>О проекте</h2>
-<div class="card">
-OnlyPartners — платформа партнёрского взаимодействия с рынком недвижимости Объединённых Арабских Эмиратов.  
-Мы объединяем инвесторов и партнёров в рамках структурированной модели сотрудничества, обеспечивая прозрачность и понятную логику взаимодействия.
-</div>
-</div>
-
-<!-- Для инвесторов -->
 <div class="section">
 <h2>Для инвесторов</h2>
 <div class="card">
 <ul class="list">
-<li>Подбор объектов под инвестиционные цели</li>
-<li>Взаимодействие с застройщиками и профильными специалистами</li>
-<li>Сопровождение сделки на ключевых этапах</li>
-<li>Индивидуальный формат работы с учётом стратегии инвестора</li>
+<li>Подбор объектов под цели инвестора</li>
+<li>Сопровождение ключевых этапов сделки</li>
+<li>Координация с профильными специалистами</li>
+<li>Индивидуальный формат взаимодействия</li>
 </ul>
 </div>
 </div>
 
-<!-- Для партнёров -->
 <div class="section">
 <h2>Для партнёров</h2>
 <div class="card">
 <ul class="list">
-<li>Закрепление клиента за партнёром</li>
-<li>Структурированная модель взаимодействия</li>
-<li>Прозрачный порядок распределения вознаграждения</li>
-<li>Индивидуальное обсуждение условий сотрудничества</li>
+<li>Закрепление клиента в рамках согласованной модели</li>
+<li>Прозрачная структура взаимодействия</li>
+<li>Индивидуальное обсуждение условий</li>
+<li>Долгосрочный формат сотрудничества</li>
 </ul>
 </div>
 </div>
 
-<!-- Принцип работы -->
-<div class="section">
-<h2>Принцип работы</h2>
-<div class="card">
-1. Первичное обращение и обсуждение проекта<br><br>
-2. Определение формата участия (инвестор / партнёр)<br><br>
-3. Закрепление клиента и согласование условий<br><br>
-4. Сопровождение сделки совместно с профильными специалистами<br><br>
-5. Финализация сделки и выполнение обязательств в рамках согласованной модели
-</div>
-</div>
-
-<!-- Контакт -->
-<div class="section cta">
-<a href="https://wa.me/37377772473" class="btn">
-Запросить обсуждение сотрудничества
-</a>
+<div class="cta">
+<a href="https://wa.me/37377772473" class="btn">Обсудить сотрудничество</a>
 </div>
 
 </div>
 
 <div class="footer">
-© 2026 OnlyPartners. Международная недвижимость ОАЭ.
+© 2026 OnlyPartners
 </div>
 
 </body>
