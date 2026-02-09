@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OnlyPartners — Международная недвижимость ОАЭ</title>
+<title>OnlyPartners — Недвижимость ОАЭ</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
+
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 background:#f5f7f9;
 color:#1f2937;
 line-height:1.6;
 }
+
 a{text-decoration:none;color:inherit;}
 
 .lang-switch{
@@ -20,6 +22,7 @@ position:absolute;
 top:20px;
 right:30px;
 font-size:14px;
+z-index:2;
 }
 
 .lang-switch a{
@@ -31,18 +34,38 @@ font-weight:500;
 .hero{
 background:
 linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
-url("dubai.jpg") center/cover no-repeat;
+url("/onlypartners/dubai.jpg") center/cover no-repeat;
 padding:120px 20px;
 text-align:center;
 position:relative;
 }
 
-.hero h1{font-size:42px;margin-bottom:16px;}
-.hero p{max-width:800px;margin:auto;color:#374151;}
+.hero h1{
+font-size:42px;
+margin-bottom:16px;
+}
 
-.container{max-width:1000px;margin:auto;padding:80px 20px;}
-.section{margin-bottom:80px;}
-.section h2{font-size:26px;margin-bottom:20px;}
+.hero p{
+max-width:800px;
+margin:auto;
+color:#374151;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section{
+margin-bottom:80px;
+}
+
+.section h2{
+font-size:26px;
+margin-bottom:20px;
+}
+
 .card{
 background:white;
 border-radius:16px;
@@ -50,10 +73,20 @@ padding:35px;
 box-shadow:0 8px 30px rgba(0,0,0,0.05);
 margin-bottom:20px;
 }
-.list{padding-left:18px;}
-.list li{margin-bottom:10px;}
 
-.cta{text-align:center;margin-top:40px;}
+.list{
+padding-left:18px;
+}
+
+.list li{
+margin-bottom:10px;
+}
+
+.cta{
+text-align:center;
+margin-top:40px;
+}
+
 .btn{
 display:inline-block;
 padding:14px 28px;
@@ -61,7 +94,13 @@ border-radius:8px;
 background:#111827;
 color:white;
 font-weight:500;
+transition:0.3s;
 }
+
+.btn:hover{
+opacity:0.85;
+}
+
 .footer{
 border-top:1px solid #e5e7eb;
 padding:50px 20px;
@@ -72,15 +111,16 @@ background:#ffffff;
 }
 </style>
 </head>
+
 <body>
 
 <div class="hero">
 <div class="lang-switch">
-RU | <a href="en.html">EN</a>
+RU | <a href="/onlypartners/en.html">EN</a>
 </div>
 
 <h1>OnlyPartners</h1>
-<p>Международная модель партнёрского взаимодействия в сфере недвижимости ОАЭ.</p>
+<p>Модель международного сотрудничества в сфере недвижимости ОАЭ.</p>
 </div>
 
 <div class="container">
@@ -89,8 +129,8 @@ RU | <a href="en.html">EN</a>
 <h2>Для инвесторов</h2>
 <div class="card">
 <ul class="list">
-<li>Подбор объектов под цели инвестора</li>
-<li>Сопровождение ключевых этапов сделки</li>
+<li>Подбор недвижимости под инвестиционные цели</li>
+<li>Сопровождение на ключевых этапах сделки</li>
 <li>Координация с профильными специалистами</li>
 <li>Индивидуальный формат взаимодействия</li>
 </ul>
@@ -101,16 +141,18 @@ RU | <a href="en.html">EN</a>
 <h2>Для партнёров</h2>
 <div class="card">
 <ul class="list">
-<li>Закрепление клиента в рамках согласованной модели</li>
-<li>Прозрачная структура взаимодействия</li>
+<li>Распределение клиентов в согласованной структуре</li>
+<li>Прозрачная модель сотрудничества</li>
 <li>Индивидуальное обсуждение условий</li>
-<li>Долгосрочный формат сотрудничества</li>
+<li>Долгосрочный формат взаимодействия</li>
 </ul>
 </div>
 </div>
 
 <div class="cta">
-<a href="https://wa.me/37377772473" class="btn">Обсудить сотрудничество</a>
+<a href="https://wa.me/37377772473" class="btn">
+Обсудить сотрудничество
+</a>
 </div>
 
 </div>
