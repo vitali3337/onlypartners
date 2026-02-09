@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OnlyPartners — UAE Real Estate</title>
+<title>OnlyPartners — International Cooperation Model</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -22,7 +22,7 @@ position:absolute;
 top:20px;
 right:30px;
 font-size:14px;
-z-index:2;
+z-index:10;
 }
 
 .lang-switch a{
@@ -33,77 +33,91 @@ font-weight:500;
 
 .hero{
 background:
-linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
-url("/onlypartners/dubai.jpg") center/cover no-repeat;
-padding:120px 20px;
+linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)),
+url("dubai.jpg") center/cover no-repeat;
+padding:140px 20px;
 text-align:center;
 position:relative;
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:16px;
+font-size:48px;
+margin-bottom:20px;
+letter-spacing:-1px;
 }
 
 .hero p{
 max-width:800px;
 margin:auto;
 color:#374151;
+font-size:18px;
 }
 
 .container{
 max-width:1000px;
 margin:auto;
-padding:80px 20px;
+padding:100px 20px;
 }
 
 .section{
-margin-bottom:80px;
+margin-bottom:100px;
+opacity:0;
+transform:translateY(30px);
+transition:all 0.8s ease;
 }
 
 .section h2{
-font-size:26px;
-margin-bottom:20px;
+font-size:30px;
+margin-bottom:30px;
 }
 
 .card{
 background:white;
-border-radius:16px;
-padding:35px;
+border-radius:18px;
+padding:40px;
 box-shadow:0 8px 30px rgba(0,0,0,0.05);
 margin-bottom:20px;
+transition:all 0.3s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 .list{
-padding-left:18px;
+padding-left:20px;
 }
 
 .list li{
-margin-bottom:10px;
+margin-bottom:12px;
+font-size:17px;
 }
 
 .cta{
 text-align:center;
-margin-top:40px;
+margin-top:60px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 28px;
-border-radius:8px;
+padding:16px 34px;
+border-radius:10px;
 background:#111827;
 color:white;
 font-weight:500;
-transition:0.3s;
+font-size:16px;
+transition:all 0.3s ease;
 }
 
 .btn:hover{
-opacity:0.85;
+background:#000000;
+transform:translateY(-2px);
 }
 
 .footer{
 border-top:1px solid #e5e7eb;
-padding:50px 20px;
+padding:60px 20px;
 text-align:center;
 font-size:14px;
 color:#6b7280;
@@ -111,16 +125,16 @@ background:#ffffff;
 }
 </style>
 </head>
-
 <body>
 
 <div class="hero">
 <div class="lang-switch">
-<a href="/onlypartners/index.html">RU</a> | EN
+<a href="index.html">RU</a> | EN
 </div>
 
 <h1>OnlyPartners</h1>
-<p>International cooperation model in the UAE real estate sector.</p>
+<p>International cooperation model in the UAE real estate sector.  
+Structured collaboration with investors, agents and partners.</p>
 </div>
 
 <div class="container">
@@ -129,9 +143,9 @@ background:#ffffff;
 <h2>For Investors</h2>
 <div class="card">
 <ul class="list">
-<li>Property selection aligned with investor objectives</li>
-<li>Support throughout key stages of the transaction</li>
-<li>Coordination with relevant professionals</li>
+<li>Property selection aligned with investment objectives</li>
+<li>Support at key transaction stages</li>
+<li>Coordination with professional specialists</li>
 <li>Individual cooperation format</li>
 </ul>
 </div>
@@ -150,9 +164,7 @@ background:#ffffff;
 </div>
 
 <div class="cta">
-<a href="https://wa.me/37377772473" class="btn">
-Discuss Cooperation
-</a>
+<a href="https://wa.me/37377772473" class="btn">Discuss Cooperation</a>
 </div>
 
 </div>
@@ -160,6 +172,23 @@ Discuss Cooperation
 <div class="footer">
 © 2026 OnlyPartners
 </div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.style.opacity = 1;
+entry.target.style.transform = "translateY(0)";
+}
+});
+});
+
+sections.forEach(section => {
+observer.observe(section);
+});
+</script>
 
 </body>
 </html>
