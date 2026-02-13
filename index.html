@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OnlyPartners — Международная модель сотрудничества в ОАЭ</title>
-<meta name="description" content="OnlyPartners — структурированная модель международного сотрудничества в сфере недвижимости ОАЭ. Работа с инвесторами и партнёрами в профессиональном формате.">
+<title>OnlyPartners — Партнёрство в сфере недвижимости ОАЭ</title>
+<meta name="description" content="OnlyPartners — независимый партнёр в экосистеме OnlyBrokers. Международная модель сотрудничества в сфере недвижимости ОАЭ.">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -21,147 +21,116 @@ a{text-decoration:none;color:inherit;}
 
 .lang-switch{
 position:absolute;
-top:25px;
-right:35px;
+top:20px;
+right:30px;
 font-size:14px;
+z-index:10;
 }
 
 .lang-switch a{
-margin-left:12px;
+margin-left:10px;
 font-weight:500;
-color:#374151;
+color:#111827;
 }
-
-/* HERO */
 
 .hero{
 background:
-linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.92)),
 url("dubai.jpg") center/cover no-repeat;
-padding:140px 20px;
+padding:130px 20px 120px;
 text-align:center;
 position:relative;
 }
 
 .hero h1{
-font-size:46px;
-margin-bottom:18px;
+font-size:44px;
+margin-bottom:20px;
 letter-spacing:0.5px;
 }
 
 .hero p{
 max-width:820px;
 margin:auto;
-color:#4b5563;
+color:#374151;
 font-size:18px;
 }
-
-/* SECTIONS */
 
 .container{
 max-width:1000px;
 margin:auto;
-padding:100px 20px;
+padding:80px 20px;
 }
 
 .section{
-margin-bottom:100px;
+margin-bottom:80px;
 }
 
 .section h2{
 font-size:30px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .card{
 background:white;
 border-radius:18px;
 padding:40px;
-box-shadow:0 15px 50px rgba(0,0,0,0.06);
+box-shadow:0 15px 40px rgba(0,0,0,0.05);
 }
 
-.card ul{
-padding-left:20px;
+.list{
+padding-left:18px;
 }
 
-.card li{
+.list li{
 margin-bottom:12px;
-color:#4b5563;
 }
-
-/* CTA */
 
 .cta{
 text-align:center;
-margin-top:60px;
+margin-top:40px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 34px;
+padding:16px 36px;
 border-radius:12px;
-background:#0f172a;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
 font-weight:600;
-letter-spacing:0.5px;
-transition:all 0.3s ease;
-box-shadow:0 10px 30px rgba(15,23,42,0.25);
+font-size:16px;
+box-shadow:0 15px 35px rgba(15,23,42,0.35);
+transition:0.3s;
 }
 
 .btn:hover{
 transform:translateY(-3px);
-box-shadow:0 15px 40px rgba(15,23,42,0.35);
+box-shadow:0 20px 45px rgba(15,23,42,0.45);
 }
 
-/* ONLYBROKERS BLOCK */
-
-.partner-block{
-padding:110px 20px;
-background:#ffffff;
-border-top:1px solid #e5e7eb;
-}
-
-.partner-container{
-max-width:900px;
-margin:auto;
-text-align:center;
-}
-
-.partner-title{
-font-size:28px;
-margin-bottom:20px;
-}
-
-.partner-text{
-color:#4b5563;
-max-width:720px;
-margin:0 auto 50px auto;
-}
-
-.partner-logo{
+.platform-block{
 background:#000;
-padding:45px;
-border-radius:20px;
-display:inline-block;
-box-shadow:0 25px 60px rgba(0,0,0,0.12);
+border-radius:22px;
+padding:70px 30px;
+text-align:center;
+margin-top:60px;
+box-shadow:0 20px 60px rgba(0,0,0,0.25);
 }
 
-.partner-logo img{
-max-width:260px;
-height:auto;
+.platform-block h3{
+color:white;
+font-size:32px;
+margin-bottom:30px;
 }
 
-.partner-note{
-margin-top:25px;
-font-size:13px;
-color:#9ca3af;
+.platform-logo{
+max-width:320px;
+width:100%;
+filter: drop-shadow(0 0 18px rgba(255,140,0,0.35));
 }
-
-/* FOOTER */
 
 .footer{
 border-top:1px solid #e5e7eb;
-padding:60px 20px;
+padding:50px 20px;
 text-align:center;
 font-size:14px;
 color:#6b7280;
@@ -169,7 +138,6 @@ background:#ffffff;
 }
 </style>
 </head>
-
 <body>
 
 <div class="hero">
@@ -180,7 +148,7 @@ RU | <a href="en.html">EN</a>
 <h1>OnlyPartners</h1>
 <p>
 Международная модель сотрудничества в сфере недвижимости ОАЭ.
-Работа с инвесторами и партнёрами в структурированном профессиональном формате.
+Работа с инвесторами, агентами и партнёрами в структурированном формате.
 </p>
 </div>
 
@@ -189,7 +157,7 @@ RU | <a href="en.html">EN</a>
 <div class="section">
 <h2>Для инвесторов</h2>
 <div class="card">
-<ul>
+<ul class="list">
 <li>Подбор недвижимости в соответствии с инвестиционными целями</li>
 <li>Сопровождение на ключевых этапах сделки</li>
 <li>Координация с юридическими и профильными специалистами</li>
@@ -201,7 +169,7 @@ RU | <a href="en.html">EN</a>
 <div class="section">
 <h2>Для партнёров</h2>
 <div class="card">
-<ul>
+<ul class="list">
 <li>Закрепление клиента в рамках согласованной структуры</li>
 <li>Прозрачная и профессиональная модель сотрудничества</li>
 <li>Индивидуальное обсуждение условий взаимодействия</li>
@@ -213,42 +181,24 @@ RU | <a href="en.html">EN</a>
 <div class="section">
 <h2>Принципы взаимодействия</h2>
 <div class="card">
-<ul>
-<li><strong>Структура</strong> — чёткое понимание этапов работы</li>
+<ul class="list">
+<li><strong>Структура</strong> — чёткое понимание этапов взаимодействия</li>
 <li><strong>Прозрачность</strong> — распределение ролей и ответственности</li>
-<li><strong>Профессиональная среда</strong> — взаимодействие с профильными специалистами</li>
+<li><strong>Профессиональная среда</strong> — работа с профильными специалистами</li>
 <li><strong>Долгосрочный подход</strong> — фокус на устойчивых отношениях</li>
 </ul>
+</div>
 </div>
 
 <div class="cta">
 <a href="https://wa.me/37377772473" class="btn">Связаться</a>
 </div>
+
+<div class="platform-block">
+<h3>Платформенное партнёрство</h3>
+<img src="logo.png" alt="OnlyBrokers Logo" class="platform-logo">
 </div>
 
-</div>
-
-<!-- ONLYBROKERS BLOCK -->
-
-<div class="partner-block">
-<div class="partner-container">
-
-<h2 class="partner-title">Платформенное партнёрство</h2>
-
-<p class="partner-text">
-OnlyPartners является независимым партнёром в рамках экосистемы OnlyBrokers.
-Работа осуществляется в партнёрском формате с соблюдением стандартов платформы.
-</p>
-
-<div class="partner-logo">
-<img src="onlybrokers.png" alt="OnlyBrokers Logo">
-</div>
-
-<p class="partner-note">
-OnlyPartners не является официальным представительством или сотрудником платформы.
-</p>
-
-</div>
 </div>
 
 <div class="footer">
