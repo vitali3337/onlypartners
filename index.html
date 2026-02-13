@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>OnlyPartners — Official Independent Partner</title>
-
-<meta name="description" content="OnlyPartners — независимый партнёр в экосистеме OnlyBrokers. Структурированная модель сотрудничества в сфере недвижимости ОАЭ.">
+<meta name="description" content="OnlyPartners — независимая партнёрская структура в экосистеме OnlyBrokers. Международная модель сотрудничества в сфере недвижимости ОАЭ.">
 
 <meta property="og:title" content="OnlyPartners — Official Independent Partner">
 <meta property="og:description" content="Structured cooperation model within the OnlyBrokers ecosystem. UAE Real Estate.">
@@ -15,7 +14,6 @@
 <meta property="og:url" content="https://vitali3337.github.io/onlypartners/">
 
 <link rel="icon" type="image/png" href="favicon.png">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -23,133 +21,139 @@
 
 body{
 font-family:'Inter',sans-serif;
-background:#f4f6f9;
+background:#f3f5f8;
 color:#1f2937;
 line-height:1.6;
 }
 
+/* Layout */
 .container{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
-padding:80px 20px;
+padding:90px 20px;
 }
 
 .hero{
 background:
-linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),
+linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
 url("dubai.jpg") center/cover no-repeat;
+padding:160px 20px;
 text-align:center;
-padding:140px 20px;
 }
 
 .hero h1{
-font-size:46px;
+font-size:48px;
 font-weight:600;
-margin-bottom:20px;
+margin-bottom:18px;
 }
 
 .hero p{
-max-width:720px;
+max-width:750px;
 margin:auto;
-font-size:18px;
+font-size:19px;
 color:#374151;
 }
 
-.section{
-margin-bottom:80px;
-opacity:0;
-transform:translateY(20px);
-animation:fadeUp 0.8s ease forwards;
+.badge{
+margin-top:20px;
+font-size:14px;
+letter-spacing:1px;
+color:#6b7280;
+text-transform:uppercase;
 }
 
-.section:nth-child(2){animation-delay:0.2s;}
-.section:nth-child(3){animation-delay:0.4s;}
-.section:nth-child(4){animation-delay:0.6s;}
+/* Sections */
+.section{
+margin-bottom:110px;
+}
 
 .section h2{
-font-size:30px;
-margin-bottom:30px;
+font-size:32px;
+margin-bottom:40px;
 text-align:center;
 }
 
 .card{
 background:white;
-border-radius:20px;
-padding:40px;
-box-shadow:0 20px 60px rgba(0,0,0,0.06);
+border-radius:26px;
+padding:50px;
+box-shadow:0 25px 70px rgba(0,0,0,0.06);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 30px 80px rgba(0,0,0,0.09);
 }
 
 .list{
-padding-left:20px;
+padding-left:22px;
 }
 
 .list li{
-margin-bottom:14px;
-font-size:17px;
+margin-bottom:16px;
+font-size:18px;
 }
 
+/* CTA */
 .cta{
 text-align:center;
-margin-top:50px;
+margin-top:60px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 40px;
-border-radius:14px;
+padding:18px 46px;
+border-radius:18px;
 background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
 font-weight:600;
-font-size:16px;
-box-shadow:0 15px 35px rgba(15,23,42,0.35);
+font-size:17px;
+box-shadow:0 20px 45px rgba(15,23,42,0.35);
 transition:0.3s;
 }
 
 .btn:hover{
-transform:translateY(-3px);
-box-shadow:0 20px 45px rgba(15,23,42,0.45);
+transform:translateY(-4px);
+box-shadow:0 25px 55px rgba(15,23,42,0.45);
 }
 
-.platform-block{
+/* Premium Platform Block */
+.platform{
 background:linear-gradient(135deg,#000000,#111827);
 color:white;
-border-radius:30px;
-padding:90px 30px;
+border-radius:40px;
+padding:110px 40px;
 text-align:center;
-margin-top:80px;
+margin-top:100px;
 }
 
-.platform-block h2{
-font-size:34px;
-margin-bottom:25px;
+.platform h2{
+font-size:36px;
+margin-bottom:30px;
 }
 
-.platform-block p{
-max-width:760px;
+.platform p{
+max-width:800px;
 margin:auto;
+font-size:19px;
 color:#d1d5db;
-font-size:18px;
-margin-bottom:40px;
+margin-bottom:50px;
 }
 
-.platform-block img{
-max-width:280px;
+.platform img{
+max-width:300px;
+opacity:0.95;
+filter: drop-shadow(0 0 20px rgba(255,140,0,0.25));
 }
 
+/* Footer */
 .footer{
 text-align:center;
-padding:60px 20px;
+padding:80px 20px;
 font-size:14px;
 color:#6b7280;
-border-top:1px solid #e5e7eb;
-margin-top:80px;
-}
-
-@keyframes fadeUp{
-to{
-opacity:1;
-transform:translateY(0);
-}
+margin-top:120px;
 }
 </style>
 </head>
@@ -162,6 +166,9 @@ transform:translateY(0);
 Международная модель структурированного сотрудничества
 в сфере недвижимости ОАЭ.
 </p>
+<div class="badge">
+Official Independent Partner within OnlyBrokers Ecosystem
+</div>
 </div>
 
 <div class="container">
@@ -170,9 +177,9 @@ transform:translateY(0);
 <h2>Для инвесторов</h2>
 <div class="card">
 <ul class="list">
-<li>Подбор недвижимости в соответствии с инвестиционными целями</li>
+<li>Подбор недвижимости в соответствии с инвестиционной стратегией</li>
 <li>Сопровождение на ключевых этапах сделки</li>
-<li>Координация с юридическими и профильными специалистами</li>
+<li>Координация с профильными и юридическими специалистами</li>
 <li>Индивидуальный формат взаимодействия</li>
 </ul>
 </div>
@@ -182,10 +189,10 @@ transform:translateY(0);
 <h2>Для партнёров</h2>
 <div class="card">
 <ul class="list">
-<li>Закрепление клиента в рамках согласованной структуры</li>
-<li>Прозрачная и профессиональная модель сотрудничества</li>
-<li>Индивидуальное обсуждение условий взаимодействия</li>
-<li>Ориентация на долгосрочное партнёрство</li>
+<li>Закрепление клиента в рамках согласованной модели</li>
+<li>Прозрачная структура взаимодействия</li>
+<li>Индивидуальное обсуждение условий сотрудничества</li>
+<li>Долгосрочный профессиональный формат</li>
 </ul>
 </div>
 </div>
@@ -194,10 +201,10 @@ transform:translateY(0);
 <h2>Принципы взаимодействия</h2>
 <div class="card">
 <ul class="list">
-<li><strong>Структура</strong> — чёткое понимание этапов взаимодействия</li>
+<li><strong>Структура</strong> — чёткое понимание этапов работы</li>
 <li><strong>Прозрачность</strong> — распределение ролей и ответственности</li>
-<li><strong>Профессиональная среда</strong> — работа с профильными специалистами</li>
-<li><strong>Долгосрочный подход</strong> — фокус на устойчивых отношениях</li>
+<li><strong>Профессиональная среда</strong> — сотрудничество с профильными специалистами</li>
+<li><strong>Долгосрочный подход</strong> — фокус на устойчивом партнёрстве</li>
 </ul>
 </div>
 
@@ -206,11 +213,22 @@ transform:translateY(0);
 </div>
 </div>
 
-<div class="platform-block">
+<!-- Future Referral Section -->
+<!--
+<div class="section">
+<h2>Official Access</h2>
+<div class="card">
+<p>Здесь будет размещён официальный партнёрский доступ после запуска платформы.</p>
+</div>
+</div>
+-->
+
+<div class="platform">
 <h2>Платформенное партнёрство</h2>
 <p>
-OnlyPartners является независимым партнёром в рамках экосистемы OnlyBrokers.
-Работа осуществляется в партнёрском формате с соблюдением стандартов платформы.
+OnlyPartners действует как независимая партнёрская структура
+в рамках экосистемы OnlyBrokers.
+Работа осуществляется с соблюдением стандартов платформы.
 </p>
 <img src="onlybrokers.png" alt="OnlyBrokers Logo">
 </div>
@@ -218,7 +236,7 @@ OnlyPartners является независимым партнёром в ра�
 </div>
 
 <div class="footer">
-© 2026 OnlyPartners | Independent Partner within OnlyBrokers Ecosystem
+© 2026 OnlyPartners | Independent Partner Structure
 </div>
 
 </body>
