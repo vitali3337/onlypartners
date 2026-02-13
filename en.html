@@ -4,147 +4,171 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OnlyPartners — Structured International Real Estate Cooperation</title>
+<title>OnlyPartners — Official Independent Partner</title>
+<meta name="description" content="OnlyPartners is an independent partner structure within the OnlyBrokers ecosystem. Structured cooperation model in the UAE real estate sector.">
 
-<meta name="description" content="OnlyPartners is a structured international cooperation model in the UAE real estate sector. Professional interaction with investors and partners.">
-
-<meta property="og:title" content="OnlyPartners — UAE Real Estate Cooperation">
-<meta property="og:description" content="Structured international cooperation model in the UAE real estate sector.">
+<meta property="og:title" content="OnlyPartners — Official Independent Partner">
+<meta property="og:description" content="Structured cooperation model within the OnlyBrokers ecosystem. UAE Real Estate.">
+<meta property="og:image" content="preview.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vitali3337.github.io/onlypartners/en.html">
-<meta property="og:image" content="https://vitali3337.github.io/onlypartners/dubai.jpg">
 
-<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-background:#f5f7f9;
+font-family:'Inter',sans-serif;
+background:#f3f5f8;
 color:#1f2937;
 line-height:1.6;
 }
-a{text-decoration:none;color:inherit;}
 
-.lang-switch{
-position:absolute;
-top:20px;
-right:30px;
-font-size:14px;
-z-index:10;
-}
-.lang-switch a{
-margin-left:10px;
-font-weight:500;
-color:#111827;
-}
-
-.hero{
-background:
-linear-gradient(180deg,rgba(255,255,255,0.88),rgba(255,255,255,0.92)),
-url("dubai.jpg") center/cover no-repeat;
-padding:140px 20px 120px;
-text-align:center;
-}
-
-.hero h1{
-font-size:44px;
-margin-bottom:18px;
-}
-
-.hero p{
-max-width:900px;
-margin:auto;
-font-size:18px;
-color:#374151;
-}
-
+/* Layout */
 .container{
-max-width:1000px;
+max-width:1150px;
 margin:auto;
 padding:90px 20px;
 }
 
+.hero{
+background:
+linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+url("dubai.jpg") center/cover no-repeat;
+padding:160px 20px;
+text-align:center;
+position:relative;
+}
+
+.lang{
+position:absolute;
+top:30px;
+right:40px;
+font-size:14px;
+}
+
+.lang a{
+color:#374151;
+text-decoration:none;
+margin-left:10px;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:600;
+margin-bottom:18px;
+}
+
+.hero p{
+max-width:750px;
+margin:auto;
+font-size:19px;
+color:#374151;
+}
+
+.badge{
+margin-top:20px;
+font-size:14px;
+letter-spacing:1px;
+color:#6b7280;
+text-transform:uppercase;
+}
+
+/* Sections */
 .section{
-margin-bottom:90px;
+margin-bottom:110px;
 }
 
 .section h2{
-font-size:28px;
-margin-bottom:30px;
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
 }
 
 .card{
-background:#ffffff;
-border-radius:20px;
-padding:40px;
-box-shadow:0 12px 40px rgba(0,0,0,0.06);
+background:white;
+border-radius:26px;
+padding:50px;
+box-shadow:0 25px 70px rgba(0,0,0,0.06);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 30px 80px rgba(0,0,0,0.09);
 }
 
 .list{
-padding-left:20px;
+padding-left:22px;
 }
 
 .list li{
-margin-bottom:14px;
+margin-bottom:16px;
+font-size:18px;
 }
 
-.video-wrap{
-position:relative;
-padding-bottom:56.25%;
-height:0;
-overflow:hidden;
-border-radius:22px;
-box-shadow:0 20px 60px rgba(0,0,0,0.15);
-}
-
-.video-wrap iframe{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-border:none;
-}
-
+/* CTA */
 .cta{
 text-align:center;
-margin-top:70px;
+margin-top:60px;
 }
 
 .btn{
 display:inline-block;
-padding:18px 42px;
-border-radius:14px;
+padding:18px 46px;
+border-radius:18px;
 background:linear-gradient(135deg,#0f172a,#1e293b);
-color:#ffffff;
-font-size:16px;
+color:white;
 font-weight:600;
-box-shadow:0 12px 30px rgba(15,23,42,0.35);
-transition:.25s;
+font-size:17px;
+box-shadow:0 20px 45px rgba(15,23,42,0.35);
+transition:0.3s;
+text-decoration:none;
 }
 
 .btn:hover{
-transform:translateY(-2px);
-box-shadow:0 18px 45px rgba(15,23,42,0.45);
+transform:translateY(-4px);
+box-shadow:0 25px 55px rgba(15,23,42,0.45);
 }
 
-.footer{
-border-top:1px solid #e5e7eb;
-padding:50px 20px;
+/* Premium Platform Block */
+.platform{
+background:linear-gradient(135deg,#000000,#111827);
+color:white;
+border-radius:40px;
+padding:110px 40px;
 text-align:center;
+margin-top:100px;
+}
+
+.platform h2{
+font-size:36px;
+margin-bottom:30px;
+}
+
+.platform p{
+max-width:800px;
+margin:auto;
+font-size:19px;
+color:#d1d5db;
+margin-bottom:50px;
+}
+
+.platform img{
+max-width:300px;
+opacity:0.95;
+filter: drop-shadow(0 0 20px rgba(255,140,0,0.25));
+}
+
+/* Footer */
+.footer{
+text-align:center;
+padding:80px 20px;
 font-size:14px;
 color:#6b7280;
-background:#ffffff;
-}
-
-.disclaimer{
-margin-top:20px;
-font-size:13px;
-color:#9ca3af;
-max-width:800px;
-margin-left:auto;
-margin-right:auto;
+margin-top:120px;
 }
 </style>
 </head>
@@ -152,74 +176,76 @@ margin-right:auto;
 <body>
 
 <div class="hero">
-  <div class="lang-switch">
-    <a href="index.html">RU</a> | EN
-  </div>
+<div class="lang">
+<a href="index.html">RU</a> | EN
+</div>
 
-  <h1>OnlyPartners</h1>
-  <p>
-    Structured international cooperation model<br>
-    in the UAE real estate sector.
-  </p>
+<h1>OnlyPartners</h1>
+<p>
+Structured international cooperation model
+within the UAE real estate sector.
+</p>
+<div class="badge">
+Official Independent Partner within OnlyBrokers Ecosystem
+</div>
 </div>
 
 <div class="container">
 
-  <div class="section">
-    <h2 style="text-align:center;">Project Presentation</h2>
-    <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/xTpYGotbkhA" allowfullscreen></iframe>
-    </div>
-  </div>
+<div class="section">
+<h2>For Investors</h2>
+<div class="card">
+<ul class="list">
+<li>Asset selection aligned with defined investment strategy</li>
+<li>Support at key transaction stages</li>
+<li>Coordination with legal and professional advisors</li>
+<li>Individual cooperation framework</li>
+</ul>
+</div>
+</div>
 
-  <div class="section">
-    <h2>For Investors</h2>
-    <div class="card">
-      <ul class="list">
-        <li>Asset selection aligned with defined investment strategy</li>
-        <li>Support at key transaction stages</li>
-        <li>Coordination with legal and professional advisors</li>
-        <li>Individual cooperation framework</li>
-      </ul>
-    </div>
-  </div>
+<div class="section">
+<h2>For Partners</h2>
+<div class="card">
+<ul class="list">
+<li>Client allocation within agreed cooperation structure</li>
+<li>Transparent interaction model</li>
+<li>Individual discussion of collaboration terms</li>
+<li>Long-term professional partnership</li>
+</ul>
+</div>
+</div>
 
-  <div class="section">
-    <h2>For Partners</h2>
-    <div class="card">
-      <ul class="list">
-        <li>Interaction fixed within agreed cooperation structure</li>
-        <li>Transparent allocation of roles and responsibilities</li>
-        <li>Individual discussion of collaboration terms</li>
-        <li>Long-term professional cooperation</li>
-      </ul>
-    </div>
-  </div>
+<div class="section">
+<h2>Principles of Cooperation</h2>
+<div class="card">
+<ul class="list">
+<li><strong>Structure</strong> — clearly defined interaction stages</li>
+<li><strong>Transparency</strong> — allocation of roles and responsibilities</li>
+<li><strong>Professional environment</strong> — cooperation with specialized experts</li>
+<li><strong>Long-term approach</strong> — focus on sustainable partnerships</li>
+</ul>
+</div>
 
-  <div class="section">
-    <h2>How Cooperation Begins</h2>
-    <div class="card">
-      <ul class="list">
-        <li>Initial contact</li>
-        <li>Discussion of cooperation format</li>
-        <li>Structuring of interaction</li>
-        <li>Further coordination</li>
-      </ul>
-    </div>
-  </div>
+<div class="cta">
+<a href="https://wa.me/37377772473" class="btn">Contact</a>
+</div>
+</div>
 
-  <div class="cta">
-    <a href="https://wa.me/37377772473" class="btn">Contact</a>
-  </div>
+<div class="platform">
+<h2>Platform Partnership</h2>
+<p>
+OnlyPartners operates as an independent partner structure
+within the OnlyBrokers ecosystem.
+Cooperation is conducted in accordance with platform standards.
+</p>
+<img src="onlybrokers.png" alt="OnlyBrokers Logo">
+</div>
 
 </div>
 
 <div class="footer">
-  © 2026 OnlyPartners
-  <div class="disclaimer">
-    OnlyPartners does not provide brokerage or investment advisory services.
-    Cooperation terms are discussed individually.
-  </div>
+© 2026 OnlyPartners | Independent Partner Structure
 </div>
 
 </body>
